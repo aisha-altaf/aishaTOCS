@@ -38,7 +38,7 @@ pipeline {
                                         docker pull ayeshaaltaf/ayeshaaltaf-portfolio:${env.BUILD_ID}
                                         docker stop ayeshaaltaf-portfolio-container || true
                                         docker rm ayeshaaltaf-portfolio-container || true
-                                        docker run -d --name ayeshaaltaf-portfolio-container -p 400:80 ayeshaaltaf/personal-portfolio:${env.BUILD_ID}
+                                        docker run -d --name ayeshaaltaf-portfolio-container -p 400:80 ayeshaaltaf/ayeshaaltaf-portfolio:${env.BUILD_ID}
                                     """
                                 )]
                             )
